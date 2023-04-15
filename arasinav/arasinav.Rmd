@@ -1,0 +1,63 @@
+---
+title: "New York'ta İşlenen Silahlı Suçların Ekonomik ve Sosyokültürel Analizi"
+author: 
+  - Atakan Bora Ceylan[^1]
+bibliography: ../bibliography/biblio.bib
+csl: ../csl/apa-tr.csl
+header-includes:
+  - \usepackage{polyglossia}
+  - \setmainlanguage{turkish}
+  - \usepackage{booktabs}
+  - \usepackage{caption} 
+  - \captionsetup[table]{skip=10pt}
+output:
+  bookdown::pdf_document2:
+    fig_caption: yes
+    fig_height: 3
+    fig_width: 4
+    keep_tex: no
+    latex_engine: xelatex
+    number_sections: yes
+    toc: no
+geometry: margin=1in
+link-citations: yes
+urlcolor: blue
+fontsize: 12pt
+biblio-style: apalike
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(cache = FALSE, echo = TRUE, message = FALSE, warning = FALSE)
+```
+
+<!-- ======================================================================= -->
+
+<!-- ============================== NOTLAR ================================= -->
+
+<!-- ======================================================================= -->
+[^1]: 20080267, [Github Repo](https://github.com/atakanboraceylan/arasinav.git)
+
+# Giriş
+
+Amerika Birleşik Devletleri'nde 19 Haziran 1865 tarihinde kölelik resmen kaldırılmıştır.1865'te başlayan bu süreç 1960'larda Hippi hareketi ve savaş karşıtı gösteriler gibi eylemler ile devam eden bu süreç ile ayrımcılık ve ırkçılık federal bir suç haline geldi.Bu süreçler sonucunda siyahi insanlar federal ve hukuksal olarak haklarını kazanmış olsalar da bu insanlar sistematik olarak ekonomik, ideolojik ve sosyokültürel olarak dışlanmış, mevcut sistemin dışına çıkarılmıştır. Tarih boyunca süregelen bu durum siyahi-hispanik toplumlarda aile kurumunun zayıflığı,ekonomik zayıflık,suç oranlarının yükselmesi ve gettolaşmaya yol açmıştır.
+
+## Çalışmanın Amacı
+
+Veriseti ABD açık veri portalından alınan (<https://https://catalog.data.gov/dataset/>) ve New York eyaletinin farklı bölgelerinde gerçekleşen 50 ayrı silahlı suçu inceleyen bu çalışmanın amacı suç işleyen ya da bu suçlara kurban giden insanların giriş bölümünde anlatılan sistematik olarak dışlanmışlığa maruz kalıp kalmadığını analiz etmektir. Bu analiz için 15 değişken (suçlunun ve kurbanın ırkı,yaş aralığı,suçun işlendiği bölge,suçlunun ekonomik durumu vs.) göze alınmıştır.
+
+## Literatür
+
+Judith R.Blau & Peter M.Blau ''The Cost of Inequality: Metropolitan Structure and Violent Crime'' isimli makalesinde ırklar arasındaki sosyoekonomik eşitsizliğin ve genel olarak eşitsizliğin suç oranlarını arttırdığına, ancak ekonomik eşitsizlikler kontrol altına alındığında yoksulluğun artık bu oranları etkilemediğine kanaat getirmiştir. Bu sonuçların bir şiddet kültürü varsa özellikle köklerinin atfedilen konumla ilişkilendirildiğinde, belirgin ekonomik eşitsizlikler olduğunu söylerler.[@blau1982cost]
+
+John H. Hipp & Daniel K. Yates ''GHETTOS, THRESHOLDS, AND CRIME: DOES CONCENTRATED POVERTY REALLY HAVE AN ACCELERATING INCREASING EFFECT ON CRIME?'' isimli makalesinde mahalle yoksulluğu ile suç oranları arasındaki ilişkinin işlevsel biçimine ilişkin, azalan bir pozitif etkiden doğrusal bir pozitif etkiye, katlanarak artan ve hatta eşik etkisine kadar değişen çeşitli tahminlerde bulunuyor.[@hipp2011ghettos]
+
+Richard M. McGahey ''Economic Conditions, Neighborhood Organization, and Urban Crime'' adlı makalesinde zayıf yerel ekonomik koşullar ve işgücü piyasasına yetersiz katılım, sosyal bozulmanın hem nedeni hem de sonucu olabileceğini belirtti ve bunun gayri resmi sosyal kontrol eksikliğine, bazı yoksul kentsel mahallelerde suçun sürekliliğine katkıda bulunduğunu savundu.[@mcgahey1986economic]
+
+Yrd. Doç Dr. Necmiye Cömertler ve Doç. Dr. Muhsin Kar ''Türkiye'de Suç Oranının Sosyoekonomik Belirliyiceleri: Yatay Kesit Analizi'' isimli makalelerinde gelir düzeyinin, işsizlik oranının, göç oranının, eğitim seviyesinin, nüfus yoğunluğu ve dogum hiti gibi demografik unsurların ve şehirleşmenin suç oranını belirleyen temel ve önemli faktörler olduğunu görmüştür.[@comertler2007turkiye]
+
+\newpage
+
+# Kaynakça {#references}
+
+::: {#refs}
+:::
